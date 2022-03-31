@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VerNoticiasComponent } from './components/ver-noticias/ver-noticias.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import{HttpClientModule} from'@angular/common/http'
+// import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
