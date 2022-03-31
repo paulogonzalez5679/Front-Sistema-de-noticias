@@ -9,7 +9,6 @@ export class VerNoticiasService {
 
   url ='http://localhost:3000/api/noticias'
   constructor(private http:HttpClient) { }
-
   getNoticias(): Observable<any>{
     return this.http.get(this.url);
   }
