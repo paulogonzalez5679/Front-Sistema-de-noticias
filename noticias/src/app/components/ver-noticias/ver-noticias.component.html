@@ -18,7 +18,7 @@
                                 <tr *ngFor="let noticia of listNoticias ">
                                     <td *ngIf="noticia.story_title !=null" class="noticias"><a href={{noticia.story_url}} target="_blank">{{noticia.story_title}}</a></td>
                                     <td *ngIf="noticia.story_title !=null" class="text-center">{{noticia.created_at}}</td>
-                                    <td *ngIf="noticia.story_title !=null" class="text-center noticias"> <i (click)="eliminarNoticia(noticia._id)" class="fas fa-trash"></i></td>
+                                    <td *ngIf="noticia.story_title !=null" class="text-center noticias"> <i (click)="eliminarNoticia(noticia._id)"> Eliminar </i></td>
                                     <td *ngIf="noticia.story_title ==null && noticia.created_at!= null" class="noticias"><a href={{noticia.story_url}} target="_blank">Title</a></td>
                                     <td *ngIf="noticia.story_title ==null && noticia.created_at!= null" class="text-center">{{noticia.created_at}}</td>
                                     <td *ngIf="noticia.story_title ==null && noticia.created_at!= null" class="text-center noticias"> <i (click)="eliminarNoticia(noticia._id)" class="fas fa-trash"></i></td>

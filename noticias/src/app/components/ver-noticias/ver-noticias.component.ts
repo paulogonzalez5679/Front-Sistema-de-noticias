@@ -34,10 +34,10 @@ export class VerNoticiasComponent implements OnInit {
   {
     this.verNoticias.eliminarNoticias(id).subscribe(data=> {
       console.log("noticia eliminada");
+
       this.obtenerNoticias();
     }, error=>{
       console.log(error);
-
     }
     )
   }
